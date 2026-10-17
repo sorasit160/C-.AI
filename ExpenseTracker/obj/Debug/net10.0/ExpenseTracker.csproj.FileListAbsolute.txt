@@ -1,0 +1,14 @@
+D:\LearnDotNet\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.exe
+D:\LearnDotNet\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.deps.json
+D:\LearnDotNet\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.runtimeconfig.json
+D:\LearnDotNet\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.dll
+D:\LearnDotNet\ExpenseTracker\bin\Debug\net10.0\ExpenseTracker.pdb
+D:\LearnDotNet\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.GeneratedMSBuildEditorConfig.editorconfig
+D:\LearnDotNet\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.AssemblyInfoInputs.cache
+D:\LearnDotNet\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.AssemblyInfo.cs
+D:\LearnDotNet\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.csproj.CoreCompileInputs.cache
+D:\LearnDotNet\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.dll
+D:\LearnDotNet\ExpenseTracker\obj\Debug\net10.0\refint\ExpenseTracker.dll
+D:\LearnDotNet\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.pdb
+D:\LearnDotNet\ExpenseTracker\obj\Debug\net10.0\ExpenseTracker.genruntimeconfig.cache
+D:\LearnDotNet\ExpenseTracker\obj\Debug\net10.0\ref\ExpenseTracker.dll
