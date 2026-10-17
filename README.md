@@ -241,7 +241,7 @@ $env:PGPASSWORD='YOUR_PASSWORD'; "SELECT * FROM ""Expenses"";" | & "C:\Program F
 
 ## การนำไปต่อยอด (Future Enhancements)
 
-- [ ] เชื่อมต่อฐานข้อมูลจริง เช่น SQLite หรือ PostgreSQL (Entity Framework Core)
+- [✔] เชื่อมต่อฐานข้อมูลจริง เช่น SQLite หรือ PostgreSQL (Entity Framework Core)
 - [ ] Export ข้อมูลออกมาเป็นไฟล์ Excel (.xlsx) หรือ CSV
 - [ ] พัฒนาต่อยอดเป็น RESTful Web API (ASP.NET Core)
-- [ ] ทำหน้าเว็บ UI หรือ Desktop UI (Blazor / MAUI / React)
+- [✔] ทำหน้าเว็บ UI หรือ Desktop UI (Blazor / MAUI / React)
