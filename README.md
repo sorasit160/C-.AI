@@ -1,5 +1,6 @@
 # Expense Tracker (สมุดบันทึกรายรับ-รายจ่าย)
 
+<<<<<<< HEAD
 ระบบบันทึกและบริหารรายรับ-รายจ่ายส่วนบุคคลแบบ Full-stack ครบวงจร พัฒนาด้วย **C# .NET 10**, **Entity Framework Core**, ฐานข้อมูล **PostgreSQL** และหน้าเว็บ **Modern Web UI (React + Vite)**
 
 ---
@@ -37,11 +38,15 @@ LearnDotNet/
 - **Schema**: `public`
 - **Table Name**: `Expenses`
 - **ORM / Driver**: Entity Framework Core 10 (`Npgsql.EntityFrameworkCore.PostgreSQL`)
+=======
+แอปพลิเคชันคอนโซล (Console Application) สำหรับบันทึกและจัดการรายรับ-รายจ่ายส่วนบุคคล พัฒนาด้วยภาษา **C#** บน **.NET 10** พร้อมระบบจัดเก็บข้อมูลแบบไฟล์ JSON อัตโนมัติ
+>>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
 
 ---
 
 ## ฟีเจอร์หลัก (Features)
 
+<<<<<<< HEAD
 - **หน้าเว็บ Web UI (React + Vite)**:
   - ธีมสี Dark Luxury สไตล์ Modern Glassmorphism
   - สรุปยอดเงินคงเหลือสุทธิ, รายรับรวม (+), และรายจ่ายรวม (-) แบบ Real-time
@@ -57,12 +62,37 @@ LearnDotNet/
   - รองรับ CORS ให้ Frontend ติดต่อได้ปลอดภัย
 - **ฐานข้อมูลจริง (PostgreSQL)**:
   - เก็บข้อมูลในตาราง `Expenses` ถาวร ปลอดภัย รองรับการขยายตัวในอนาคต
+=======
+- **ดูรายการทั้งหมด**: แสดงประวัติรายการรายรับ-รายจ่าย เรียงตามวันที่ล่าสุด พร้อมไฮไลต์สี (เขียว = รายรับ, แดง = รายจ่าย)
+- **เพิ่มรายรับ / รายจ่าย**: บันทึกรายละเอียด, จำนวนเงิน, วันที่ (เลือกใส่วันนี้หรือระบุวันที่ย้อนหลัง) และหมวดหมู่
+- **ลบรายการ**: เลือกลบรายการที่ไม่ต้องการตาม ID
+- **สรุปรายงานการเงิน**:
+  - ยอดรวมรายรับ รายจ่าย และคงเหลือสุทธิ
+  - สรุปรายจ่ายแยกตามหมวดหมู่ (เรียงจากมากไปน้อย)
+  - สรุปภาพรวมรายรับ-รายจ่ายแยกตามเดือน
+  - อันดับรายจ่ายสูงสุด 5 อันดับแรก
+- **ค้นหารายการ**: ค้นหาตามคำสำคัญ (Keyword) ในรายละเอียดรายการ
+- **จัดเก็บข้อมูลอัตโนมัติ (Persistence)**: ข้อมูลถูกบันทึกเป็นไฟล์ JSON อัตโนมัติใน Application Data ของผู้ใช้ ไม่สูญหายเมื่อปิดโปรแกรม
+
+---
+
+## หมวดหมู่ที่มีให้เลือก (Categories)
+
+- `Food` (อาหาร)
+- `Transport` (การเดินทาง)
+- `Shopping` (ช้อปปิ้ง)
+- `Bills` (บิล/ค่าน้ำ-ไฟ-โทรศัพท์)
+- `Entertainment` (ความบันเทิง)
+- `Salary` (เงินเดือน/รายได้)
+- `Other` (อื่นๆ)
+>>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
 
 ---
 
 ## ความต้องการของระบบ (Prerequisites)
 
 - [.NET 10.0 SDK](https://dotnet.microsoft.com/download) หรือใหม่กว่า
+<<<<<<< HEAD
 - [Node.js](https://nodejs.org/) (เวอร์ชัน 18 ขึ้นไป สำหรับรัน Frontend)
 - [PostgreSQL](https://www.postgresql.org/download/) (เวอร์ชัน 14+ รันบนพอร์ต 5432)
 
@@ -78,10 +108,18 @@ LearnDotNet/
     "DefaultConnection": "Host=localhost;Port=5432;Database=C#;Username=postgres;Password=YOUR_POSTGRES_PASSWORD"
   }
 }
+=======
+- ระบบปฏิบัติการ: Windows, macOS หรือ Linux
+
+ตรวจสอบความพร้อมของ .NET SDK ในเครื่อง:
+```bash
+dotnet --version
+>>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
 ```
 
 ---
 
+<<<<<<< HEAD
 ## วิธีการรันโปรเจกต์ (How to Run)
 
 ### 1. รัน Backend Web API (.NET 10)
@@ -105,10 +143,29 @@ npm run dev
 หากต้องการทดสอบผ่าน Console เดิม:
 ```powershell
 dotnet run --project ExpenseTracker
+=======
+## โครงสร้างโปรเจกต์ (Project Structure)
+
+```text
+LearnDotNet/
+├── LearnDotNet.slnx
+├── README.md
+└── ExpenseTracker/
+    ├── ExpenseTracker.csproj      # ไฟล์กำหนดค่าโปรเจกต์ (Target net10.0)
+    ├── Program.cs                 # เมนู Console และการรับ-แสดงผลข้อมูล
+    ├── Models/
+    │   ├── Category.cs            # Enum หมวดหมู่รายการ
+    │   └── Expense.cs             # Data Model สำหรับรายรับ-รายจ่าย
+    ├── Services/
+    │   └── ExpenseService.cs      # Business Logic และการประมวลผล LINQ
+    └── Storage/
+        └── JsonFileStorage.cs     # ระบบบันทึก/โหลดข้อมูลไฟล์ JSON
+>>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
 ```
 
 ---
 
+<<<<<<< HEAD
 ## โครงสร้างตารางในฐานข้อมูล (Database Schema: `Expenses`)
 
 ```sql
@@ -157,3 +214,39 @@ $env:PGPASSWORD='YOUR_PASSWORD'; "SELECT * FROM ""Expenses"";" | & "C:\Program F
 | `POST` | `/api/expenses` | บันทึกรายการใหม่ลงใน PostgreSQL |
 | `DELETE` | `/api/expenses/{id}` | ลบรายการออกจาก PostgreSQL ตาม ID |
 | `GET` | `/api/categories` | ดึงรายชื่อหมวดหมู่ทั้งหมด |
+=======
+## วิธีการติดตั้งและรันโปรแกรม (Getting Started)
+
+1. **Clone หรือดาวน์โหลดโปรเจกต์** มาไว้ที่เครื่องของคุณ
+
+2. **เปิด Terminal / Command Prompt** ไปที่โฟลเดอร์ของโปรเจกต์:
+   ```powershell
+   cd d:\LearnDotNet
+   ```
+
+3. **สั่งรันโปรแกรม**:
+   ```powershell
+   dotnet run --project ExpenseTracker
+   ```
+
+4. **การ Build โปรเจกต์**:
+   ```powershell
+   dotnet build ExpenseTracker
+   ```
+
+---
+
+## ตำแหน่งที่จัดเก็บข้อมูล (Data Storage Location)
+
+ข้อมูลรายรับ-รายจ่ายจะถูกบันทึกไว้ในรูปแบบ JSON ที่:
+- **Windows**: `%AppData%\ExpenseTracker\expenses.json` (เช่น `C:\Users\<YourUser>\AppData\Roaming\ExpenseTracker\expenses.json`)
+
+---
+
+## การนำไปต่อยอด (Future Enhancements)
+
+- [ ] เชื่อมต่อฐานข้อมูลจริง เช่น SQLite หรือ PostgreSQL (Entity Framework Core)
+- [ ] Export ข้อมูลออกมาเป็นไฟล์ Excel (.xlsx) หรือ CSV
+- [ ] พัฒนาต่อยอดเป็น RESTful Web API (ASP.NET Core)
+- [ ] ทำหน้าเว็บ UI หรือ Desktop UI (Blazor / MAUI / React)
+>>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
