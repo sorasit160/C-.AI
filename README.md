@@ -40,7 +40,6 @@ LearnDotNet/
 - **ORM / Driver**: Entity Framework Core 10 (`Npgsql.EntityFrameworkCore.PostgreSQL`)
 =======
 แอปพลิเคชันคอนโซล (Console Application) สำหรับบันทึกและจัดการรายรับ-รายจ่ายส่วนบุคคล พัฒนาด้วยภาษา **C#** บน **.NET 10** พร้อมระบบจัดเก็บข้อมูลแบบไฟล์ JSON อัตโนมัติ
->>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
 
 ---
 
@@ -85,7 +84,6 @@ LearnDotNet/
 - `Entertainment` (ความบันเทิง)
 - `Salary` (เงินเดือน/รายได้)
 - `Other` (อื่นๆ)
->>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
 
 ---
 
@@ -114,7 +112,6 @@ LearnDotNet/
 ตรวจสอบความพร้อมของ .NET SDK ในเครื่อง:
 ```bash
 dotnet --version
->>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
 ```
 
 ---
@@ -160,7 +157,6 @@ LearnDotNet/
     │   └── ExpenseService.cs      # Business Logic และการประมวลผล LINQ
     └── Storage/
         └── JsonFileStorage.cs     # ระบบบันทึก/โหลดข้อมูลไฟล์ JSON
->>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
 ```
 
 ---
@@ -249,4 +245,3 @@ $env:PGPASSWORD='YOUR_PASSWORD'; "SELECT * FROM ""Expenses"";" | & "C:\Program F
 - [ ] Export ข้อมูลออกมาเป็นไฟล์ Excel (.xlsx) หรือ CSV
 - [ ] พัฒนาต่อยอดเป็น RESTful Web API (ASP.NET Core)
 - [ ] ทำหน้าเว็บ UI หรือ Desktop UI (Blazor / MAUI / React)
->>>>>>> b65dcd224fcf8db004efa3c6a410d2a7204c7515
